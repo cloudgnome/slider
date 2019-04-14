@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="slider.css">
+    <script src="alpha.js"></script>
+    <script>
+        var photos = ["image/photo1.jpg","image/photo2.jpg","image/photo3.jpg","image/photo4.jpg"]
+    </script>
+</head>
+<body>
+    <div id="photo" class="noselect">
+        <div class="prev arrow"></div>
+        <div id="slider">
+            <img src="image/photo1.jpg" alt="">
+            <img src="image/photo2.jpg" alt="">
+            <img src="image/photo3.jpg" alt="">
+            <img src="image/photo4.jpg" alt="">
+        </div>
+        <div class="next arrow"></div>
+    </div>
+    <script src="http.js"></script>
+    <script src="slider.js"></script>
+    <script>
+        var slider = new Slider();
+    </script>
+</body>
+</html>

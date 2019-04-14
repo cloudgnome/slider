@@ -1,0 +1,75 @@
+#photo{
+    width: 480px;
+    height: 480px;
+    border-radius: 20px 0 0 20px;
+    background: #ba0b87;
+    position: relative;
+    overflow: hidden;
+}
+#photo #slider{
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    overflow: hidden;
+    height: 480px;
+}
+#photo img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    float: left;
+}
+#photo #dots{
+    position: absolute;
+    display: flex;
+    top: 23px;
+    z-index: 2;
+    justify-content: center;
+    width: 100%;
+}
+#photo #dots .dot{
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ba0b87;
+    border-radius: 20px;
+    top: 15px;
+    left: 183px;
+    background: #fff;
+    margin-right: 12px;
+    cursor: pointer;
+}
+#photo #dots .dot.active{
+    background-color: #ba0b87;
+}
+#photo .prev{
+    left: 27px;
+}
+#photo .next{
+    right: 27px;
+    transform: rotateZ(-180deg);
+    top: 44.5%;
+}
+#photo .arrow{
+    background-image: url(image/next.svg);
+    width: 25px;
+    height: 47px;
+    position: absolute;
+    top: 47%;
+    z-index: 1;
+    cursor: pointer;
+}
+#photo .button{
+    position: absolute;
+    bottom: 35px;
+    left: 180px;
+    display: block;
+    background: #fff;
+    border-radius: 32px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#photo #cross.button{
+    left: 260px;
+}
